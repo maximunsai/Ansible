@@ -1,8 +1,8 @@
 ---
-   name: java installation
-   hosts: all
-   become: yes
-   tasks:
+  name: java install
+  hosts: all
+  become: yes
+  tasks:
     - name: install java
       ansible.builtin.apt:
         name: openjdk-17-jdk
